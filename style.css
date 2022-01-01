@@ -1,0 +1,10 @@
+h1 {
+    color: white;
+}
+#rectangle {
+    width: 1366px;
+    height: 350px;
+    background: #04323a;
+    margin: 0;
+    padding: 0;
+}
