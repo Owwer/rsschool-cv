@@ -20,7 +20,7 @@ function multiply(a, b){
 }
 ```
 ## Education
-* Belorussion State Academy of Communication
+* Belarusian State Academy of Communication
     + software testing
     + software maintenance
 ## Languages
