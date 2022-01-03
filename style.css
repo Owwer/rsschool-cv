@@ -1,10 +1,292 @@
-h1 {
-    color: white;
+.header {
+    max-width: 1000px;
+    position: absolute;
+    top: 0;
+    left: 220px;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FCE38A;
+    opacity: 0.8;  
+  }
+
+  .nav{
+    font-size: 25px;  
+  }
+  
+  .nav_link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color: #09194F;
+    text-decoration: none;
+    text-align: center;
+    transition: color .2s linear;
+    font-family: 'Work Sans', sans-serif; 
+  }
+  
+  .nav_link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+    background-color: #00818A;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+  
+    transition: opasity .1s linear;
+  }
+  
+  .nav_link:hover {
+    color: #00818A;
+  }
+  
+
+body{
+    background-color: #FDFDEB;  
 }
-#rectangle {
-    width: 1366px;
-    height: 350px;
-    background: #04323a;
-    margin: 0;
-    padding: 0;
+
+.conteiner{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
 }
+
+@media (max-width: 1200px){
+    .conteiner{
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px){
+    .conteiner{
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px){
+    .conteiner{
+        max-width: none;
+    }
+}
+  
+  .photo{
+   position: absolute; 
+    width:250px;
+    height: 250px; 
+    border-radius: 50%; 
+    background-size: auto 300px;
+    top: 100px;
+    left: 580px;
+  }
+
+  .blob1{
+    position: relative;
+    right: -440px;
+    top: 20px;
+  }
+
+  .blob2{
+    position: absolute;
+    left:500px;
+    top: 60px;
+  }
+
+  .line{
+      height: 3px;
+      max-width: 500px;
+      background-color: #00818A;
+      margin: 10px auto;
+  }
+
+  .surname{
+    height: 25px;
+    max-width: 150px;
+    background-color: #F9CE00;
+    border-radius: 45%;
+  }
+
+  h1{
+      font-size: 60px;
+      text-align: center;
+      margin: 0;
+      font-family: 'Courgette', cursive;
+      color: #09194F;
+  }
+
+  .contacts{
+    max-width: 500px;
+    height: 150px;
+    background-color: #09194F;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    display: block;
+  }
+
+  h2{
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    color: #FDFDEB;
+    margin: 20px 10px;
+    font-size: 30px;
+  }
+
+  li{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    color: #FDFDEB;
+    margin: 5px auto;  
+  }
+
+  a{
+      text-decoration: none;
+      color: #FDFDEB;
+  }
+
+  a:hover{
+      color:#F9CE00;
+  }
+
+  .conteiner_about_me{
+    max-width: 1000px;
+    margin: 15px auto;
+  }
+
+  .about_me{
+      max-width: 1000px;
+      background-color: #00818A;
+      min-height: 200px;
+      border-radius: 15px;
+      display: block;  
+      margin-left: auto;
+      margin-right: auto; 
+  }
+
+
+  p{
+      color: #FDFDEB;
+      font-size: 20px;
+      margin: 20px 20px;
+      font-family: 'Work Sans', sans-serif;   
+  }
+
+  .skills {
+      max-width: 550px;
+      min-height: 300px;
+      background-color: #F9CE00;
+      border-radius: 15px;
+      display: block; 
+      margin-left: auto;
+      margin-right: auto; 
+  }
+
+  .value {
+    max-width: 400px;
+	height: 10px;
+	background: #FDFDEB;
+	margin: 20px auto;
+    border-radius: 10px;
+}
+  .value-box {
+	height: 10px;
+	background: #09194F;
+    border-radius: 10px;
+}
+
+.code_exmp{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    display: block;
+    background-color: #09194F;
+  } 
+
+  code{
+      font-size: 20px;
+      color: #FDFDEB;   
+  }
+
+  .code_marker{
+      color: #F9CE00;
+  }
+
+  .educ_conteiner{
+      max-width: 1000px;
+      margin: 15px auto;
+      
+  }
+
+  .education{
+      width: 45%;
+      background-color: #00818A;
+      border-radius: 15px;
+      display: inline-block;
+      margin: auto 15px;
+  }
+
+  .languages{
+    width: 45%;
+    background-color: #F9CE00;
+    border-radius: 15px;
+    display: inline-block;
+    margin: auto 15px; 
+  }
+
+  h3{
+      font-size: 20px;
+      font-family: 'Work Sans', sans-serif;
+      color: #FDFDEB;
+      margin: 10px;
+  }
+
+  .education_list{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    color: #FDFDEB;
+    margin: 3px auto;  
+  }
+
+  .language_marker{
+      color: #09194F;
+  }
+
+   footer {
+    flex-shrink: 0;
+    background-color: #FCE38A;
+    height: 110px;   
+  }
+
+  .logo{
+    margin: 10px ;
+    float: left;
+}
+
+  .github_logo{
+    
+    float: right;
+    width: 35px;
+    height: 35px;
+    margin: 35px 10px 35px 10px;
+  }
+
+  .year{
+      color: #09194F;
+      text-align: center;
+      position: relative;
+      bottom: -35px;
+  }
+
+  
+
+   
